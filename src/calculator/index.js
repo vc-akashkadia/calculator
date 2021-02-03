@@ -28,7 +28,6 @@ export default function Index() {
   };
 
   const handleClick = (e) => {
-    console.log("e", e.keyCode);
     setResult();
     let val;
     // const val = e.target.value;
@@ -86,7 +85,6 @@ export default function Index() {
       }
     }
   };
-  console.log("number", number);
   const calculate = (isSave) => {
     reset();
     const isLastCharSpecialChar = /[\/*+-.]$/i.test(number);
